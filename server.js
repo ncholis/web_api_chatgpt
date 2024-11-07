@@ -15,7 +15,7 @@ app.post('/api/generate-text', async (req, res) => {
     //For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
     try {
         const response = await axios.post(
-            'https://api.openai.com/v1/completions',
+            //'https://api.openai.com/v1/completions',
             {
                 model: "gpt-3.5-turbo-instruct",
                 prompt: prompt,
